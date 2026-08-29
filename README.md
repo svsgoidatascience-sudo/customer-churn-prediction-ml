@@ -85,7 +85,22 @@ The analysis indicates that:
 - Threshold Optimization
 - Model Interpretation
 - Business Insight Generation
+## Model Visualizations
 
+### ROC Curve
+The ROC curve evaluates the model's ability to distinguish between churn and non-churn customers. The final Logistic Regression + SMOTE model achieved an ROC-AUC score of **0.713**.
+
+![ROC Curve](roc_curve(1).png)
+
+### Confusion Matrix
+The confusion matrix shows the classification performance of the final model. It correctly identified **47 out of 63 actual churn customers**, achieving a churn recall of **75%**.
+
+![Confusion Matrix](confusion_matrix.png)
+
+### Feature Importance
+The feature analysis highlights the variables that have the strongest influence on customer churn. Longer-term contracts are associated with lower churn probability, while support calls are associated with increased churn risk.
+
+![Top Features Influencing Customer Churn](feature_importance.png)
 ## Conclusion
 
 This project demonstrates a complete Machine Learning classification workflow, from raw data preparation to model evaluation and business interpretation.
